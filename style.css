@@ -1,0 +1,101 @@
+:root{
+
+--roxoclaro: #7B1FA2;
+--roxoescuro:#530082;
+
+}
+*{
+    margin:0;
+    padding: 0;
+}
+
+#logo{
+    padding: 20px;
+    width: 100%;
+}
+#logo img{
+    margin-left: 80px;  
+}
+
+body{
+    background-color: var(--roxoescuro);
+    font-family: 'Arial', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(img/background.jpg) no-repeat center center fixed;
+    overflow: hidden;
+    background-size: cover;
+}
+body::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--roxoescuro);
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.user-profile{
+    background-color: lightgray ;
+    margin-top: 6%;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+
+}
+.profile-top{
+    background: linear-gradient(to top, var(--roxoclaro), var(--roxoescuro));
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
+.profile-top img{
+    border-radius: 50%;
+    border: 5px solid white;
+
+}
+
+.profile-top .profile-info{
+    margin-top: 1rem;
+}
+.profile-bottom{
+    padding: 3rem 3rem 1rem 3rem;
+}
+.profile-bottom .profile-info{
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: 0.5s;
+}
+
+.profile-bottom .profile-info .material-icons{
+    margin-right: 0.5rem;
+    color: gray;
+}
+.profile-bottom .profile-info:hover{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+button{
+    margin-top: 2rem;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: 0.5s ease;
+}
+button:hover{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+}

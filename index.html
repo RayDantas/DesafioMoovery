@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Usuários</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <script src="script.js"></script>
+    <div id = "logo">
+        <img src="img/logotipo-moovery.png" alt="logo">
+    </div>
+    <div class="user-profile">
+
+        <div class="profile-top">
+            <img id="image" src="https://randomuser.me/api/portraits/women/29.jpg" alt="">
+            <div class="profile-info">
+                <span id="name">Nome</span>
+                <span id="sobrenome">Sobrenome</span>
+            </div>
+        </div>
+        <div class="profile-bottom">
+            <div class="profile-info">
+                <span class="material-icons">person</span>
+                <span id="idade">Idade</span>
+
+            </div>
+            <div class="profile-info">
+                <span class="material-icons">location_on</span>
+                <span id="cidade">Cidade</span>
+            </div>
+
+        </div>
+    </div>
+
+    <button onclick='getRandomUser()'>Novo usuário</button>
+
+</body>
+
+</html>
